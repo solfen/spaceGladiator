@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: AssaultRifle01
+  m_Shader: {fileID: 23, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 5bf47364f11e44d0a89424fcf0a05526, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 074cd015b1dbf4e2286207120cc7ab89, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 7a663a08d72074d669be8dcefd020cbb, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 1ceff7c663a74444aa3e83a5a0b4d019, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .167898327
+    m_Colors:
+      data:
+        first:
+          name: _Reflection
+        second: {r: .389705896, g: .389705896, b: .389705896, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: .845588207, g: .845588207, b: .845588207, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .963235319, g: .963235319, b: .963235319, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: .676470578, g: .676470578, b: .676470578, a: .501960814}

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MA_Pistol01Clip
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: e435653c3f56242a2ae56aede703b8bd, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: f1032751d11d1441ba906e2b010a444b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 86ffe74c6c2134750afce01ec2a4be60, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 4fbc2f4b13f724ee4aee97f2f4cc1714, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .206115499
+    m_Colors:
+      data:
+        first:
+          name: _Reflection
+        second: {r: .5, g: .5, b: .5, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: .611995995, g: .648354113, b: .738806009, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .600801945, g: .732310712, b: .865671635, a: 1}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: .156716406, g: .055891864, b: 0, a: .501960814}
