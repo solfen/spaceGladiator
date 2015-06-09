@@ -3,25 +3,32 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
 
-	Vector3 myDestination;
-	public float speed;
+
 	public GameObject hitEffect;
-	bool moving;
-	Vector3 distanceDiff;
-	float destroyDistance;
-	int damage = 50;
-	float nextTargetTest;
-	float targetTestDelay = 0.05f;
-	GameObject currentTarget;
-	Vector3 currentHitPoint;
-	float maxTargetDistance = 250;
-	RaycastHit hit;
-	Vector3 startPosition;
-	Vector3 diffToFirstDest;
-	Vector3 diffToStart;
+	public float speed;
+
+	private GameObject currentTarget;
+
+	private int damage = 50;
+
+	private float destroyDistance;
+	private float nextTargetTest;
+	private float targetTestDelay = 0.05f;
+	private float maxTargetDistance = 250;
+
+	private Vector3 myDestination;
+	private Vector3 distanceDiff;
+	private Vector3 currentHitPoint;
+	private Vector3 startPosition;
+	private Vector3 diffToFirstDest;
+	private Vector3 diffToStart;
+
+	private bool moving;
+	private RaycastHit hit;
 
 	void Start () {
-	
+
+		//Debug.Log("bullet");
 		moving = false;
 		destroyDistance = 0.5f;
 		startPosition = transform.position;
@@ -101,9 +108,7 @@ public class Bullet : MonoBehaviour {
 			Instantiate (hitEffect, gameObject.transform.position, Quaternion.identity);
 
 			if (currentTarget){
-
 				if (currentTarget.tag == "Enemy"){
-				
 					currentTarget.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
 				}
 			}

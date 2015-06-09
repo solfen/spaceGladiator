@@ -1880,7 +1880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ItemRecords:
     itemList: 150
-    helpbox: 133
+    helpbox: 144
   m_ItemCaps:
     itemList: 219
     helpbox: 100
@@ -2001,7 +2001,7 @@ MonoBehaviour:
   SpawnOnAwake: 0
   SpawnSound: {fileID: 8300000, guid: c6ffb5ccbd00a114494143e33e747a05, type: 3}
   SpawnFXPrefabs: []
-  helpbox: 133
+  helpbox: 155
 --- !u!143 &14300000
 CharacterController:
   m_ObjectHideFlags: 1

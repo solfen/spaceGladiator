@@ -1,31 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Monster : MonoBehaviour {
+public class Monster : vp_DamageHandler {
 
-	GameObject mySpawn;
-	string AIState;
-	CharacterController controller;
-	float heading;
-	Vector3 targetRotation;
-	float nextDirectionChange;
-	Animation charAnim;
-	float moveDecision;
-	float nextIdleDecision;
-	float currentSpeed;
-	Vector3 randDir;
-	GameObject playerObject;
-	float distToPlayer;
-	float nextPlayerTest;
-	Vector3 diffFromSpawn;
-	Vector3 diffFromPlayer;
-	float nextFire;
-	float dotToPlayer;
-	bool heardPlayer = false;
-	bool firing;
-	bool hurting;
-	float hurtingEnd;
-	float fireEnd;
+	//bob
+	private GameObject mySpawn;
+	private GameObject playerObject;
+
+	private string AIState;
+	private Animation charAnim;
+	private CharacterController controller;
+
+	private float heading;
+	private float nextDirectionChange;
+	private float moveDecision;
+	private float nextIdleDecision;
+	private float currentSpeed;
+	private float distToPlayer;
+	private float nextPlayerTest;
+	private float nextFire;
+	private float dotToPlayer;
+	private float hurtingEnd;
+	private float fireEnd;
+	private float maxHeadingChange = 180;
+	private float visionAngle = 0.25f;
+	private float idleDecisionInterval = 2;
+	private float rotateSpeed = 3;
+	private float testPlayerDelay = 0.2f;
+	private float health;
+
+	private Vector3 targetRotation;
+	private Vector3 randDir;
+	private Vector3 diffFromSpawn;
+	private Vector3 diffFromPlayer;
+
+	private bool heardPlayer = false;
+	private bool firing;
+	private bool hurting;
 
 	public float speed = 1;
 	public float runspeed = 3;
@@ -34,16 +45,11 @@ public class Monster : MonoBehaviour {
 	public float sightDistance = 15;
 	public float hearDistance = 5;
 	public float fireDelay = 1;
+
 	public GameObject bullet;
 	public GameObject firingPosition;
 
-	float maxHeadingChange = 180;
-	float visionAngle = 0.25f;
-	public float health = 100;
-	float idleDecisionInterval = 2;
-	float rotateSpeed = 3;
-	float testPlayerDelay = 0.2f;
-
+	private vp_DamageHandler DamageHandler;
 	
 	void Start () {
 
@@ -64,30 +70,41 @@ public class Monster : MonoBehaviour {
 	}
 
 	void AssignSpawn (GameObject spawn) {
-			
+
 		mySpawn = spawn;	
+
 	}
 
 
-	void TakeDamage (int damage) {
+	void TakeDamage () {
 
+
+	}
+
+	public override void Damage(float damage){
+
+		Damage(new vp_DamageInfo(damage, null));
+
+		Debug.Log("Damage");
 		if (AIState != "Dead") {
-
-			health -= damage;
-
+			
+			//health -= damage;
+			
+			Debug.Log("health :"+CurrentHealth+" / damage :"+damage);
+			
 			charAnim.CrossFade("hit");
-
+			
 			hurting = true;
 			hurtingEnd = Time.time + charAnim.animation["hit"].clip.length;
-
+			
 			nextIdleDecision = Time.time + charAnim.animation["hit"].clip.length;
-
-			if (health <= 0 ) {
-
+			
+			if (CurrentHealth <= 0) {
+				
 				charAnim.CrossFade("death");
-
+				
 				AIState = "Dead";
-
+				
 				CharacterController charCont = GetComponent<CharacterController>();
 				charCont.enabled = false;
 			}
@@ -215,7 +232,7 @@ public class Monster : MonoBehaviour {
 
 		if (AIState == "Attack") {
 					
-			Debug.DrawLine(gameObject.transform.position, playerObject.transform.position, Color.red);
+			//Debug.DrawLine(gameObject.transform.position, playerObject.transform.position, Color.red);
 
 			randDir = new Vector3(diffFromPlayer.x, 1, diffFromPlayer.z);
 
@@ -258,7 +275,7 @@ public class Monster : MonoBehaviour {
 
 		//if(rotationCheck > -0.5f){
 
-			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation(randDir), rotateSpeed * Time.deltaTime);
+			//transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation(randDir), rotateSpeed * Time.deltaTime);
 			transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
 		//}
 
