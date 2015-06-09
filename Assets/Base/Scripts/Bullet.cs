@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour {
 	private int damage = 50;
 
 	private float destroyDistance;
-	private float nextTargetTest;
+	//private float nextTargetTest;
 	private float targetTestDelay = 0.05f;
 	private float maxTargetDistance = 250;
 
@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour {
 
 		//TargetTest();
 
-		nextTargetTest = Time.time + targetTestDelay;
+		//nextTargetTest = Time.time + targetTestDelay;
 	}
 
 	void AssignDestination (Vector3 dest){

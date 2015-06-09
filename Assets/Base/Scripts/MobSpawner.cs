@@ -47,12 +47,12 @@ public class MobSpawner : MonoBehaviour {
 			
 			RaycastHit hit;
 						
-			Vector3 debugRay = wallTestOrigin + testDir;
+//			Vector3 debugRay = wallTestOrigin + testDir;
 				//Instantiate(testSphere, debugRay, Quaternion.identity);
 			
 			if (Physics.Raycast(wallTest, out hit, testDir.magnitude)){
 				
-				Vector3 hitDistance = hit.point - wallTestOrigin;
+//				Vector3 hitDistance = hit.point - wallTestOrigin;
 				//newSpawn = hit.point - new Vector3(3,0,3);
 				//Instantiate(testSphere, hit.point, Quaternion.identity);
 				newSpawn = wallTestOrigin;

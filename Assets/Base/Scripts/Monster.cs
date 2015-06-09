@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class Monster : vp_DamageHandler {
-
-	//bob
+	
 	private GameObject mySpawn;
 	private GameObject playerObject;
 
@@ -11,7 +10,7 @@ public class Monster : vp_DamageHandler {
 	private Animation charAnim;
 	private CharacterController controller;
 
-	private float heading;
+	//private float heading;
 	private float nextDirectionChange;
 	private float moveDecision;
 	private float nextIdleDecision;
@@ -22,12 +21,11 @@ public class Monster : vp_DamageHandler {
 	private float dotToPlayer;
 	private float hurtingEnd;
 	private float fireEnd;
-	private float maxHeadingChange = 180;
+//	private float maxHeadingChange = 180;
 	private float visionAngle = 0.25f;
 	private float idleDecisionInterval = 2;
 	private float rotateSpeed = 3;
 	private float testPlayerDelay = 0.2f;
-	private float health;
 
 	private Vector3 targetRotation;
 	private Vector3 randDir;
@@ -58,8 +56,8 @@ public class Monster : vp_DamageHandler {
 		charAnim = gameObject.GetComponentInChildren<Animation>();
 		controller = GetComponent<CharacterController>();
 				
-		heading = Random.Range(0, 360);
-		transform.eulerAngles = new Vector3(0, heading, 0);
+		//heading = Random.Range(0, 360);
+		transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
 
 		nextPlayerTest = Time.time + testPlayerDelay;
 		
@@ -76,22 +74,9 @@ public class Monster : vp_DamageHandler {
 	}
 
 
-	void TakeDamage () {
-
-
-	}
-
-	public override void Damage(float damage){
-
-		Damage(new vp_DamageInfo(damage, null));
-
-		Debug.Log("Damage");
+	void TakeDamageAnim () {
 		if (AIState != "Dead") {
-			
-			//health -= damage;
-			
-			Debug.Log("health :"+CurrentHealth+" / damage :"+damage);
-			
+			Debug.Log("health :"+CurrentHealth);
 			charAnim.CrossFade("hit");
 			
 			hurting = true;
@@ -109,8 +94,17 @@ public class Monster : vp_DamageHandler {
 				charCont.enabled = false;
 			}
 		}
+
 	}
 
+	public override void Damage(float damage){
+		Damage(new vp_DamageInfo(damage, null));
+	}
+
+	public override void Damage(vp_DamageInfo damageInfo){
+		base.Damage(damageInfo);
+		TakeDamageAnim ();
+	}
 
 	void DecideMove () {
 
@@ -275,7 +269,7 @@ public class Monster : vp_DamageHandler {
 
 		//if(rotationCheck > -0.5f){
 
-			//transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation(randDir), rotateSpeed * Time.deltaTime);
+			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation(randDir), rotateSpeed * Time.deltaTime);
 			transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
 		//}
 
