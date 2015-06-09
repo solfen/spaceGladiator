@@ -131,7 +131,7 @@ public class vp_HitscanBullet : MonoBehaviour
 				body.AddForceAtPosition(((ray.direction * Force) / Time.timeScale) / vp_TimeUtility.AdjustedTimeScale, hit.point);
 
 			// spawn impact effect
-			/*if (m_ImpactPrefab != null)
+			if (m_ImpactPrefab != null)
 				vp_Utility.Instantiate(m_ImpactPrefab, m_Transform.position, m_Transform.rotation);
 
 			// spawn dust effect
@@ -145,9 +145,12 @@ public class vp_HitscanBullet : MonoBehaviour
 					vp_Utility.Instantiate(m_SparkPrefab, m_Transform.position, m_Transform.rotation);
 			}
 
+			if(hit.collider.tag == "Enemy")
+				renderer.enabled = false;
+
 			// spawn debris particle fx
 			if (m_DebrisPrefab != null)
-				vp_Utility.Instantiate(m_DebrisPrefab, m_Transform.position, m_Transform.rotation);*/
+				vp_Utility.Instantiate(m_DebrisPrefab, m_Transform.position, m_Transform.rotation);
 
 			// play impact sound
 			if (m_ImpactSounds.Count > 0)
