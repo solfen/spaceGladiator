@@ -159,7 +159,7 @@ public class Monster : MonoBehaviour {
 
             GameObject newBullet = Instantiate(bullet, firingPosition.transform.position, Quaternion.identity) as GameObject;
 
-            newBullet.SendMessage("AssignDestination", playerObject.transform.position);
+            newBullet.SendMessage("AssignDestination", playerObject.transform.GetChild(0).position);
         }
     }
 

@@ -108,8 +108,8 @@ public class Bullet : MonoBehaviour {
 			Instantiate (hitEffect, gameObject.transform.position, Quaternion.identity);
 
 			if (currentTarget){
-				if (currentTarget.tag == "Enemy"){
-					currentTarget.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+                if (currentTarget.transform.parent && currentTarget.transform.parent.tag == "Player") {
+                    currentTarget.transform.parent.SendMessage("Damage", 1.0f, SendMessageOptions.DontRequireReceiver);
 				}
 			}
 
