@@ -10,9 +10,10 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   - 143: {fileID: 14300000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4166,13 +4167,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c381009029b0645a0743837604794e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 2
+  walkSpeed: 1
+  runSpeed: 3
+  wanderDirInterval: 5
+  strifeDirInterval: 1.5
+  sightDistance: 30
+  hearDistance: 15
+  fightMovesDist: 5
+  fireDelay: 1.20000005
+  bullet: {fileID: 100000, guid: 4d8c21240a1fe5b408aec9fe6e2049b9, type: 2}
+  firingPosition: {fileID: 100002}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afa96b0804ec29f49bc171fae6aa9b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 1
   DeathSpawnObjects: []
-  MinDeathDelay: 5
-  MaxDeathDelay: 5
-  CurrentHealth: 0
+  MinDeathDelay: 0
+  MaxDeathDelay: 0
+  CurrentHealth: 1
   DeathSound: {fileID: 0}
-  ImpactDamageThreshold: 1
+  HitAnim: hit
+  DeathAnim: death
+  ImpactDamageThreshold: 10
   ImpactDamageMultiplier: 0
   Respawns: 0
   MinRespawnTime: -99999
@@ -4180,16 +4204,7 @@ MonoBehaviour:
   RespawnCheckRadius: -99999
   RespawnSound: {fileID: 0}
   DeathEffect: {fileID: 0}
-  helpbox: 106
-  speed: 1
-  runspeed: 6
-  directionChangeInterval: 10
-  maxWanderingDistance: 10
-  sightDistance: 15
-  hearDistance: 5
-  fireDelay: 1.20000005
-  bullet: {fileID: 100000, guid: 4d8c21240a1fe5b408aec9fe6e2049b9, type: 2}
-  firingPosition: {fileID: 100002}
+  helpbox: 95
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -4337,13 +4352,13 @@ CharacterController:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1.89999998
   m_Radius: .5
   m_SlopeLimit: 45
-  m_StepOffset: .300000012
+  m_StepOffset: .5
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: .949999988, z: 0}
+  m_Center: {x: 0, y: 1.01999998, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

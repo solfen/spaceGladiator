@@ -34,6 +34,11 @@ public class vp_DamageHandler : MonoBehaviour
 	// sounds
 	public AudioClip DeathSound = null;					// sound to play upon death
 	protected AudioSource m_Audio = null;
+
+    //animations
+    public String HitAnim = null;
+    public String DeathAnim = null;
+    private Animation anims = null;
 	
 	// impact damage
 	public float ImpactDamageThreshold = 10;
@@ -172,12 +177,20 @@ public class vp_DamageHandler : MonoBehaviour
 
 		CurrentHealth = MaxHealth;
 
+        if (HitAnim != "" || DeathAnim != "") {
+            anims = gameObject.GetComponentInChildren<Animation>();
+            if (anims == null) {
+                Debug.LogError("Animations specified but no component animation in childrens");
+            }
+        }
+
 		// check for obsolete respawn-related parameters, create a vp_Respawner
 		// component (if necessary) and disable such values on this component
 		// NOTE: this check is temporary and will be removed in the future
 		CheckForObsoleteParams();
 
 	}
+
 	
 
 	/// <summary>
@@ -202,6 +215,7 @@ public class vp_DamageHandler : MonoBehaviour
 	/// </summary>
 	public virtual void Damage(float damage)
 	{
+
 		Damage(new vp_DamageInfo(damage, null));
 	}
 	public virtual void Damage(vp_DamageInfo damageInfo)
@@ -237,12 +251,16 @@ public class vp_DamageHandler : MonoBehaviour
 			// do this in multiplayer and singleplayer
 			if (CurrentHealth <= 0.0f)
 			{
-				// send the 'Die' message, to be picked up by vp_DamageHandlers and vp_Respawners
-				if (m_InstaKill)
-					SendMessage("Die");
-				else
-					vp_Timer.In(UnityEngine.Random.Range(MinDeathDelay, MaxDeathDelay), delegate()	{	SendMessage("Die");	});
+                if (DeathAnim != "") {
+                    anims.CrossFade(DeathAnim);
+                    vp_Timer.In(anims.animation[DeathAnim].clip.length, delegate() { Die(); });
+                }
+                else
+                    Die();
 			}
+            else if(HitAnim != "") {
+                anims.CrossFade(HitAnim);
+            }
 
 		}
 

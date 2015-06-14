@@ -12,7 +12,7 @@ GameObject:
   - 143: {fileID: 14300000}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4166,16 +4166,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c381009029b0645a0743837604794e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  runspeed: 6
-  directionChangeInterval: 10
-  maxWanderingDistance: 10
+  walkSpeed: 1
+  runSpeed: 3
+  wanderDirInterval: 3
+  strifeDirInterval: 1.5
   sightDistance: 15
   hearDistance: 5
+  fightMovesDist: 5
   fireDelay: 1.20000005
   bullet: {fileID: 100000, guid: 4d8c21240a1fe5b408aec9fe6e2049b9, type: 2}
   firingPosition: {fileID: 100002}
-  health: 100
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
