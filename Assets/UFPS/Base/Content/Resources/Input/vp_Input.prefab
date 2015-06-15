@@ -45,7 +45,6 @@ MonoBehaviour:
   - SetNextWeapon
   - SetPrevWeapon
   - ClearWeapon
-  - Zoom
   - Reload
   - Jump
   - Crouch
@@ -57,15 +56,16 @@ MonoBehaviour:
   - Menu
   - Toggle3rdPerson
   - ScoreBoard
-  ButtonValues: 430100006500000071000000080000004401000072000000200000006300000030010000660000000d0000000f010000700000001b0000007600000009000000
+  - Zoom
+  ButtonValues: 4301000048010000220000000800000072000000200000006300000024000000660000000d0000000f010000700000001b000000760000000900000000000000
   AxisKeys:
   - Vertical
   - Horizontal
   AxisValues:
-  - Positive: 119
+  - Positive: 122
     Negative: 115
   - Positive: 100
-    Negative: 97
+    Negative: 113
   UnityAxis:
   - Mouse X
   - Mouse Y

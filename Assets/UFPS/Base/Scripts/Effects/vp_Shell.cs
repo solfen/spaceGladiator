@@ -76,6 +76,7 @@ public class vp_Shell : MonoBehaviour
 	/// </summary>
 	void Update()
 	{
+
 		if (m_RestAngleFunc == null)
 		{
 			// after a while we decide how the shell should come to rest.
