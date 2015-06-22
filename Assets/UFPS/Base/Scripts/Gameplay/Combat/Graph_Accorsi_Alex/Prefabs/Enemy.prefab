@@ -4204,7 +4204,7 @@ MonoBehaviour:
   RespawnCheckRadius: -99999
   RespawnSound: {fileID: 0}
   DeathEffect: {fileID: 0}
-  helpbox: 139
+  helpbox: 106
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

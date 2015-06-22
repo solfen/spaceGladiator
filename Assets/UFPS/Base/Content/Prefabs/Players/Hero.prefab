@@ -4113,7 +4113,7 @@ MonoBehaviour:
   SpawnOnAwake: 0
   SpawnSound: {fileID: 8300000, guid: c6ffb5ccbd00a114494143e33e747a05, type: 3}
   SpawnFXPrefabs: []
-  helpbox: 177
+  helpbox: 155
 --- !u!114 &11400042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4143,6 +4143,8 @@ MonoBehaviour:
   MaxDeathDelay: 0
   CurrentHealth: 0
   DeathSound: {fileID: 8300000, guid: 0405e24c9af9fce44b774de2c723967a, type: 3}
+  HitAnim: 
+  DeathAnim: 
   ImpactDamageThreshold: 10
   ImpactDamageMultiplier: 1
   Respawns: 0
