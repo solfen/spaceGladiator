@@ -8,9 +8,9 @@ InputManager:
     m_Name: Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: q
-    positiveButton: d
-    altNegativeButton: q
+    negativeButton: left
+    positiveButton: right
+    altNegativeButton: a
     altPositiveButton: d
     gravity: 3
     dead: .00100000005
@@ -24,10 +24,10 @@ InputManager:
     m_Name: Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: s
-    positiveButton: z
+    negativeButton: down
+    positiveButton: up
     altNegativeButton: s
-    altPositiveButton: z
+    altPositiveButton: w
     gravity: 3
     dead: .00100000005
     sensitivity: 3
