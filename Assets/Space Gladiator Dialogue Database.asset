@@ -111,6 +111,50 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
+  - id: 2
+    fields:
+    - title: Name
+      value: SQ5
+      type: 0
+    - title: Initial Value
+      value: 0
+      type: 1
+    - title: Description
+      value: 
+      type: 0
+  - id: 3
+    fields:
+    - title: Name
+      value: SQ7
+      type: 0
+    - title: Initial Value
+      value: 0
+      type: 1
+    - title: Description
+      value: 
+      type: 0
+  - id: 4
+    fields:
+    - title: Name
+      value: SQ9
+      type: 0
+    - title: Initial Value
+      value: 0
+      type: 1
+    - title: Description
+      value: 
+      type: 0
+  - id: 5
+    fields:
+    - title: Name
+      value: SQ10
+      type: 0
+    - title: Initial Value
+      value: 0
+      type: 1
+    - title: Description
+      value: 
+      type: 0
   conversations:
   - id: 1
     fields:
@@ -557,7 +601,7 @@ MonoBehaviour:
         value: 
         type: 0
       - title: Dialogue Text
-        value: 5 minutes de combat drastiquement fallacieu plus tard...
+        value: "5 minutes de combat \xE9pique plus tard..."
         type: 0
       - title: Parenthetical
         value: 
@@ -1178,7 +1222,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Title
-      value: intermede
+      value: SQ5
       type: 0
     - title: Pictures
       value: '[]'
@@ -1209,13 +1253,13 @@ MonoBehaviour:
         value: 4
         type: 5
       - title: Conversant
-        value: 4
+        value: 2
         type: 5
       - title: Menu Text
         value: 
         type: 0
       - title: Dialogue Text
-        value: 10 secondes plus tard...
+        value: 
         type: 0
       - title: Parenthetical
         value: 
@@ -1236,19 +1280,85 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 0
+        destinationConversationID: 3
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 4
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "Bienvenue, mesdames et messieurs, vous allez tous avoir l\u2019immense
+          privil\xE8ge d\u2019assister \xE0 la grande finale du tournoi organis\xE9
+          par le bien-aim\xE9 juge Rango ! Aujourd\u2019hui, pr\xE9parez bien vos
+          parapluies parce que \xE7a va \xEAtre un bain de sang ! Les plus f\xE9roces
+          guerriers, animaux et autres cr\xE9atures redoutables de l\u2019univers
+          vont s'affronter dans un combat sans merci ! Celui ou celle qui survivra
+          \xE0 tout \xE7a, gagnera sa libert\xE9 ainsi que la jolie somme de 50 000
+          cr\xE9dits ! Et cerise sur le g\xE2teau cette r\xE9compense sera remise
+          par le g\xE9nial juge Rango en personne, dans le luxe de ses quartiers personnels
+          ! Sur ce, assez de blabla, place \xE0 l\u2019action !"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
       userScript: 
       canvasRect:
         serializedVersion: 2
-        x: 62
-        y: 145
+        x: 30
+        y: 70
         width: 160
         height: 30
   - id: 4
     fields:
     - title: Title
-      value: RangoEtla
+      value: SQ7
       type: 0
     - title: Pictures
       value: '[]'
@@ -1257,7 +1367,7 @@ MonoBehaviour:
       value: 
       type: 0
     - title: Actor
-      value: 3
+      value: 1
       type: 5
     - title: Conversant
       value: 2
@@ -1276,7 +1386,7 @@ MonoBehaviour:
         value: 
         type: 0
       - title: Actor
-        value: 3
+        value: 4
         type: 5
       - title: Conversant
         value: 2
@@ -1285,8 +1395,7 @@ MonoBehaviour:
         value: 
         type: 0
       - title: Dialogue Text
-        value: "STOP ! Cessez le feu ! Spike, d\xE9pose tes armes ou on bute ta femme
-          !"
+        value: 
         type: 0
       - title: Parenthetical
         value: 
@@ -1298,7 +1407,7 @@ MonoBehaviour:
         value: 
         type: 0
       - title: Sequence
-        value: 
+        value: None()
         type: 0
       conversationID: 4
       isRoot: 0
@@ -1337,245 +1446,16 @@ MonoBehaviour:
         value: 2
         type: 5
       - title: Conversant
-        value: 3
+        value: 4
         type: 5
       - title: Menu Text
         value: 
         type: 0
       - title: Dialogue Text
-        value: Salaud !
-        type: 0
-      - title: Parenthetical
-        value: 
-        type: 0
-      - title: Audio Files
-        value: '[]'
-        type: 3
-      - title: Video File
-        value: 
-        type: 0
-      - title: Sequence
-        value: 
-        type: 0
-      conversationID: 4
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 4
-        originDialogueID: 1
-        destinationConversationID: 4
-        destinationDialogueID: 2
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 70
-        width: 160
-        height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-      - title: Pictures
-        value: '[]'
-        type: 3
-      - title: Description
-        value: 
-        type: 0
-      - title: Actor
-        value: 3
-        type: 5
-      - title: Conversant
-        value: 2
-        type: 5
-      - title: Menu Text
-        value: 
-        type: 0
-      - title: Dialogue Text
-        value: "Ah ! Je vois que tu as un minimum de jugeote. Je suis le v\xE9n\xE9rable
-          juge Rango. Toi Spike le c\xE9l\xE8bre mercenaire, tu es dor\xE9navant un
-          gladiateur condamn\xE9 \xE0 se battre dans mon ar\xE8ne sur le Rh\xF6ma."
-        type: 0
-      - title: Parenthetical
-        value: 
-        type: 0
-      - title: Audio Files
-        value: '[]'
-        type: 3
-      - title: Video File
-        value: 
-        type: 0
-      - title: Sequence
-        value: 
-        type: 0
-      conversationID: 4
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 4
-        originDialogueID: 2
-        destinationConversationID: 4
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 120
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-      - title: Pictures
-        value: '[]'
-        type: 3
-      - title: Description
-        value: 
-        type: 0
-      - title: Actor
-        value: 2
-        type: 5
-      - title: Conversant
-        value: 3
-        type: 5
-      - title: Menu Text
-        value: 
-        type: 0
-      - title: Dialogue Text
-        value: "Et ma femme ? O\xD9 EST MA FEMME ?"
-        type: 0
-      - title: Parenthetical
-        value: 
-        type: 0
-      - title: Audio Files
-        value: '[]'
-        type: 3
-      - title: Video File
-        value: 
-        type: 0
-      - title: Sequence
-        value: 
-        type: 0
-      conversationID: 4
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 4
-        originDialogueID: 3
-        destinationConversationID: 4
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 170
-        width: 160
-        height: 30
-    - id: 4
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-      - title: Pictures
-        value: '[]'
-        type: 3
-      - title: Description
-        value: 
-        type: 0
-      - title: Actor
-        value: 3
-        type: 5
-      - title: Conversant
-        value: 2
-        type: 5
-      - title: Menu Text
-        value: 
-        type: 0
-      - title: Dialogue Text
-        value: "Gagne le prochain tournoi et on en reparlera. En attendant ne t\u2019inqui\xE8te
-          pas pour elle, on va tr\xE8s bien s\u2019en occuper si tu vois ce que je
-          veux dire."
-        type: 0
-      - title: Parenthetical
-        value: 
-        type: 0
-      - title: Audio Files
-        value: '[]'
-        type: 3
-      - title: Video File
-        value: 
-        type: 0
-      - title: Sequence
-        value: 
-        type: 0
-      conversationID: 4
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 4
-        originDialogueID: 4
-        destinationConversationID: 4
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 220
-        width: 160
-        height: 30
-    - id: 5
-      fields:
-      - title: Title
-        value: New Dialogue Entry
-        type: 0
-      - title: Pictures
-        value: '[]'
-        type: 3
-      - title: Description
-        value: 
-        type: 0
-      - title: Actor
-        value: 2
-        type: 5
-      - title: Conversant
-        value: 3
-        type: 5
-      - title: Menu Text
-        value: 
-        type: 0
-      - title: Dialogue Text
-        value: Salaud !
+        value: "Incroyable ! Quel combat mesdames et messieurs ! L\u2019invaincu Spike
+          a encore frapp\xE9 ! Il est officiellement le champion de l'ar\xE8ne ! Et
+          il va pouvoir aller recevoir sa r\xE9compense bien m\xE9rit\xE9e dans les
+          quartiers du magnifique juge Rango."
         type: 0
       - title: Parenthetical
         value: 
@@ -1602,7 +1482,1305 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
+        y: 70
+        width: 160
+        height: 30
+  - id: 5
+    fields:
+    - title: Title
+      value: SQ9
+      type: 0
+    - title: Pictures
+      value: '[]'
+      type: 3
+    - title: Description
+      value: 
+      type: 0
+    - title: Actor
+      value: 3
+      type: 5
+    - title: Conversant
+      value: 2
+      type: 5
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: 
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 0
+        destinationConversationID: 5
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "Tr\xE8s belle performance, j\u2019avais de grands espoirs pour toi
+          mais tu es all\xE9 au-del\xE0 de mes r\xEAves les plus fous. Vraiment !
+          Gr\xE2ce \xE0 toi je gagne des fortunes."
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 1
+        destinationConversationID: 5
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 70
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 3
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: Et ma femme ? ELLE EST OU EST MA FEMME ?
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 2
+        destinationConversationID: 5
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 120
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: Houla ! Fais pas de conneries, hein ! Si tu tentes quelque chose, ta
+          femme aura une fin horrible.
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 3
+        destinationConversationID: 5
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 170
+        width: 160
+        height: 30
+    - id: 4
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 3
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "Non ! Pas ma femme. Piti\xE9 ne lui faites !"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 4
+        destinationConversationID: 5
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 220
+        width: 160
+        height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "Bon, c\u2019est demand\xE9 si gentiment. Si tu continues de me rapporter
+          autant, tu pourrais bien la revoir vivante. Enfin si je suis de bonne humeur,
+          hahaha !"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 5
+        destinationConversationID: 5
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
         y: 270
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 3
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "J\u2019ai une meilleure id\xE9e en fait\u2026"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 6
+        destinationConversationID: 5
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 29
+        y: 320
+        width: 160
+        height: 30
+    - id: 7
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "Mais et ta femme, tu..tu.. as pens\xE9 \xE0 ta femme ? Je peux la
+          faire tuer quand je veux, hein ! Fais pas de conneries tu tiens \xE0 ta
+          femme, hein !"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 7
+        destinationConversationID: 5
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 370
+        width: 160
+        height: 30
+    - id: 8
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 3
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "T\u2019a pas fini avec ces menaces en l\u2019air ? Je sais bien que
+          c\u2019est que du bluff tout \xE7a. Et puis finalement... ma femme je m\u2019en
+          fiche."
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 8
+        destinationConversationID: 5
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 420
+        width: 160
+        height: 30
+    - id: 9
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "TA FEMME, TA FEMME... C\u2019EST ELLE QUI EN A RIEN \xC0 FAIRE DE
+          TOI ! ELLE T\u2019A VENDU ! C\u2019EST ELLE QUI NOUS A DONN\xC9 TA POSITION
+          ET D\xC9SACTIV\xC9 LES D\xC9FENSES DE TON VAISSEAU !! *se calme* mais je
+          peux t\u2019aider, gr\xE2ce \xE0 moi tu peux la retrouver pour lui faire
+          payer, hein range ce couteau et je t\u2019aide, et en plus je te laisse
+          partir comme \xE7a, tout est pardonn\xE9, hein c\u2019est bien, non ? Non
+          ? NON ?"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 9
+        destinationConversationID: 5
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 470
+        width: 160
+        height: 30
+    - id: 10
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 3
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "Hmmm... nan. \xC0 la place, tu vas quand m\xEAme me lib\xE9rer en
+          d\xE9sactivant compl\xE8tement ma puce et puis tu vas me filer tout ton
+          fric."
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 10
+        destinationConversationID: 5
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 520
+        width: 160
+        height: 30
+    - id: 11
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "D\u2019accord, d\u2019accord. *Manipule un \xE9cran* Voila c\u2019est
+          fait, tu me laisses partir maintenant ?"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 11
+        destinationConversationID: 5
+        destinationDialogueID: 12
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 53
+        y: 568
+        width: 160
+        height: 30
+    - id: 12
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 3
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: Hahahaha...
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 12
+        destinationConversationID: 5
+        destinationDialogueID: 13
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 620
+        width: 160
+        height: 30
+    - id: 13
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 3
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: AAAAAAAARG!!!
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Variable["SQ9"] = Variable["SQ9"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 287
+        y: 42
+        width: 160
+        height: 30
+  - id: 6
+    fields:
+    - title: Title
+      value: SQ10
+      type: 0
+    - title: Pictures
+      value: '[]'
+      type: 3
+    - title: Description
+      value: 
+      type: 0
+    - title: Actor
+      value: 1
+      type: 5
+    - title: Conversant
+      value: 2
+      type: 5
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 4
+        type: 5
+      - title: Conversant
+        value: 4
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: Quelque heures plus tard...
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: Delay({{end}})@5;
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 0
+        destinationConversationID: 6
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      canvasRect:
+        serializedVersion: 2
+        x: 31
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 1
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "Alors tout s\u2019est pass\xE9 comme pr\xE9vu ?"
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: Delay({{end}})@2;
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 1
+        destinationConversationID: 6
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ10"] = Variable["SQ10"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 70
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 1
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "\xC9videmment\u2026 Aller on met les voiles."
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: Delay({{end}})@2;
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 2
+        destinationConversationID: 6
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ10"] = Variable["SQ10"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 120
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 1
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: Ha, mince !
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: 
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 3
+        destinationConversationID: 6
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ10"] = Variable["SQ10"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 31
+        y: 170
+        width: 160
+        height: 30
+    - id: 4
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 1
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: Mais quoi ?
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: Delay({{end}})@2;
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 4
+        destinationConversationID: 6
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ10"] = Variable["SQ10"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 220
+        width: 160
+        height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 1
+        type: 5
+      - title: Conversant
+        value: 2
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: "J\u2019ai oubli\xE9 de faire les courses."
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: Delay({{end}})@2;
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 5
+        destinationConversationID: 6
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ10"] = Variable["SQ10"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 58
+        y: 273
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 2
+        type: 5
+      - title: Conversant
+        value: 1
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: HAHAHAHAHAHAHAHAHAHAHA...
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: Delay({{end}})@2;
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 6
+        destinationConversationID: 6
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: Variable["SQ10"] = Variable["SQ10"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 37
+        y: 323
+        width: 160
+        height: 30
+    - id: 7
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+      - title: Pictures
+        value: '[]'
+        type: 3
+      - title: Description
+        value: 
+        type: 0
+      - title: Actor
+        value: 4
+        type: 5
+      - title: Conversant
+        value: 4
+        type: 5
+      - title: Menu Text
+        value: 
+        type: 0
+      - title: Dialogue Text
+        value: THE END
+        type: 0
+      - title: Parenthetical
+        value: 
+        type: 0
+      - title: Audio Files
+        value: '[]'
+        type: 3
+      - title: Video File
+        value: 
+        type: 0
+      - title: Sequence
+        value: Delay({{end}})@10;
+        type: 0
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Variable["SQ10"] = Variable["SQ10"] + 1
+      canvasRect:
+        serializedVersion: 2
+        x: 34
+        y: 383
         width: 160
         height: 30
   syncInfo:
